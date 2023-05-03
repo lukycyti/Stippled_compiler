@@ -1,0 +1,151 @@
+# dune build @doc
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root:
+# /autofs/unityaccount/cremi/lbrouet/compilation/projet_compilation/projet_compilation
+# Auto-detected concurrency: 8
+$ /opt/local/opam/4.12.1/bin/ocamlc.opt -config > /tmp/cache-lbrouet/dune_f5b8b8_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/opt/local/opam/4.12.1/lib/toplevel"
+#  ; ocaml_bin = External "/opt/local/opam/4.12.1/bin"
+#  ; ocaml = Ok External "/opt/local/opam/4.12.1/bin/ocaml"
+#  ; ocamlc = External "/opt/local/opam/4.12.1/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/opt/local/opam/4.12.1/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/opt/local/opam/4.12.1/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/opt/local/opam/4.12.1/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/opt/local/opam/4.12.1/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/opt/local/opam/4.12.1/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/autofs/unityaccount/cremi/lbrouet/compilation/projet_compilation/projet_compilation"
+#        ; "INSIDE_DUNE" :
+#            "/autofs/unityaccount/cremi/lbrouet/compilation/projet_compilation/projet_compilation/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/autofs/unityaccount/cremi/lbrouet/compilation/projet_compilation/projet_compilation/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/autofs/unityaccount/cremi/lbrouet/compilation/projet_compilation/projet_compilation/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/autofs/unityaccount/cremi/lbrouet/compilation/projet_compilation/projet_compilation/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/opt/local/opam/4.12.1/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.1"
+#      ; standard_library_default = "/opt/local/opam/4.12.1/lib/ocaml"
+#      ; standard_library = "/opt/local/opam/4.12.1/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /opt/local/opam/4.12.1/bin/odoc support-files -o _doc/_html)
+$ (cd _build/default/_doc/_odoc/pkg/analyser && /opt/local/opam/4.12.1/bin/odoc compile --pkg analyser -o page-index.odoc ../../../_mlds/analyser/index.mld)
+$ (cd _build/default/_doc/_odoc/pkg/ast && /opt/local/opam/4.12.1/bin/odoc compile --pkg ast -o page-index.odoc ../../../_mlds/ast/index.mld)
+$ (cd _build/default/_doc/_odoc/pkg/interpreter && /opt/local/opam/4.12.1/bin/odoc compile --pkg interpreter -o page-index.odoc ../../../_mlds/interpreter/index.mld)
+$ (cd _build/default/_doc/_odoc/pkg/util && /opt/local/opam/4.12.1/bin/odoc compile --pkg util -o page-index.odoc ../../../_mlds/util/index.mld)
+$ (cd _build/default/util/.util.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/util --pkg util -o util.odoc util.cmt)
+$ (cd _build/default/util/.util.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/util --pkg util -o util__Environment.odoc util__Environment.cmti)
+$ (cd _build/default/util/.util.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/util --pkg util -o util__Position.odoc util__Position.cmti)
+$ (cd _build/default/util/.util.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/util --pkg util -o util__Error_report.odoc util__Error_report.cmti)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/util -I ../../util/.util.objs/byte -o ../_odocls/util/page-index.odocl ../_odoc/pkg/util/page-index.odoc)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/util -I ../../util/.util.objs/byte -o ../_odocls/util/util.odocl ../../util/.util.objs/byte/util.odoc)
+> File "../../util/.util.objs/byte/util.odoc":
+> Warning: Couldn't find the following modules:
+>   Stdlib
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/util/page-index.odocl)
+$ (cd _build/default/language/.ast.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/ast -I ../../../util/.util.objs/byte --pkg ast -o ast.odoc ast.cmti)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/util/util.odocl)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/ast -I ../../language/.ast.objs/byte -I ../../util/.util.objs/byte -o ../_odocls/ast/page-index.odocl ../_odoc/pkg/ast/page-index.odoc)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/ast -I ../../language/.ast.objs/byte -I ../../util/.util.objs/byte -o ../_odocls/ast/ast.odocl ../../language/.ast.objs/byte/ast.odoc)
+> File "../../language/.ast.objs/byte/ast.odoc":
+> Warning: Couldn't find the following modules:
+>   Stdlib
+$ (cd _build/default/analyser/.analyser.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/analyser -I ../../../language/.ast.objs/byte -I ../../../util/.util.objs/byte --pkg analyser -o analyser__.odoc analyser__.cmt)
+$ (cd _build/default/interpreter/.interpreter.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/interpreter -I ../../../language/.ast.objs/byte -I ../../../util/.util.objs/byte --pkg interpreter -o interpreter.odoc interpreter.cmti)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/ast/page-index.odocl)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/interpreter -I ../../interpreter/.interpreter.objs/byte -I ../../language/.ast.objs/byte -I ../../util/.util.objs/byte -o ../_odocls/interpreter/interpreter.odocl ../../interpreter/.interpreter.objs/byte/interpreter.odoc)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/interpreter -I ../../interpreter/.interpreter.objs/byte -I ../../language/.ast.objs/byte -I ../../util/.util.objs/byte -o ../_odocls/interpreter/page-index.odocl ../_odoc/pkg/interpreter/page-index.odoc)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/ast/ast.odocl)
+$ (cd _build/default/analyser/.analyser.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/analyser -I ../../../language/.ast.objs/byte -I ../../../util/.util.objs/byte --pkg analyser -o analyser.odoc analyser.cmti)
+$ (cd _build/default/analyser/.analyser.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/analyser -I ../../../language/.ast.objs/byte -I ../../../util/.util.objs/byte --pkg analyser -o analyser__Simplifier.odoc analyser__Simplifier.cmt)
+$ (cd _build/default/analyser/.analyser.objs/byte && /opt/local/opam/4.12.1/bin/odoc compile -I . -I ../../../_doc/_odoc/pkg/analyser -I ../../../language/.ast.objs/byte -I ../../../util/.util.objs/byte --pkg analyser -o analyser__Type_analyser.odoc analyser__Type_analyser.cmt)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/interpreter/interpreter.odocl)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/interpreter/page-index.odocl)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/analyser -I ../../analyser/.analyser.objs/byte -I ../../language/.ast.objs/byte -I ../../util/.util.objs/byte -o ../_odocls/analyser/analyser.odocl ../../analyser/.analyser.objs/byte/analyser.odoc)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc link -I ../_odoc/pkg/analyser -I ../../analyser/.analyser.objs/byte -I ../../language/.ast.objs/byte -I ../../util/.util.objs/byte -o ../_odocls/analyser/page-index.odocl ../_odoc/pkg/analyser/page-index.odoc)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/analyser/analyser.odocl)
+$ (cd _build/default/_doc/_html && /opt/local/opam/4.12.1/bin/odoc html-generate -o . ../_odocls/analyser/page-index.odocl)

@@ -1,0 +1,80 @@
+type token =
+    Y_ACCESSOR
+  | X_ACCESSOR
+  | TO
+  | TAIL
+  | SUB
+  | STEP
+  | SIN
+  | SEMICOLON
+  | R_SQ_BRK
+  | R_PAR
+  | RED_ACCESSOR
+  | PRINT
+  | POSITION_ACCESSOR
+  | POINT
+  | PI
+  | OR
+  | NOT
+  | NE
+  | MUL
+  | MOD
+  | L_SQ_BRK
+  | L_PAR
+  | LT
+  | LIST
+  | LE
+  | INT_TYPE
+  | INT of int
+  | IN
+  | IF
+  | IDENTIFIER of string
+  | HEAD
+  | GT
+  | GREEN_ACCESSOR
+  | GE
+  | FROM
+  | FOREACH
+  | FOR
+  | FLOOR
+  | FLOAT_TYPE
+  | FLOAT_OF_INT
+  | FLOAT of float
+  | EQ
+  | EOF
+  | END
+  | ELSE
+  | DRAW
+  | DOT
+  | DIV
+  | DEF
+  | COS
+  | COPY
+  | COMMA
+  | COLOR_ACCESSOR
+  | BOOL_TYPE
+  | BOOL of bool
+  | BLUE_ACCESSOR
+  | BEGIN
+  | AND
+  | ADD
+val menhir_begin_marker : int
+val xv_variable_expression : Ast.expression
+val xv_variable_content : Ast.expression
+val xv_unary_operator : Ast.unary_operator
+val xv_simple_data_type_declaration : Ast.type_expr
+val xv_main : Ast.program
+val xv_list_instanciation : Ast.expression
+val xv_instruction_list : Ast.statement list
+val xv_instruction_if : Ast.statement
+val xv_instruction_foreach : Ast.statement
+val xv_instruction_for : Ast.statement
+val xv_instruction_block : Ast.statement
+val xv_instruction : Ast.statement
+val xv_field_accessor : Ast.field_accessor
+val xv_declaration_lines : Ast.argument list
+val xv_declaration_line : Ast.argument
+val xv_declaration_block : Ast.argument list
+val xv_content_list_instanciation : Ast.expression list
+val xv_binary_operator : Ast.binary_operator
+val menhir_end_marker : int
